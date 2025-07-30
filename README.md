@@ -9,9 +9,7 @@ This project builds a complete pipeline to:
 - Compare metrics (MAE, MSE, RMSE, R²) and plots (Actual vs. Predicted)
 - Forecast specific future dates and simulate returns for an investment
 
-> **Note:** The notebook assumes that the student have a CSV with the schema:  
-> `Date, Symbol, Open, High, Low, Close`  
-> For example: `psx_data_20211210_to_20241210.csv`.
+
 
 ## Quick Start
 
@@ -38,21 +36,14 @@ This project builds a complete pipeline to:
 - **forecasts/** (CSV with date-wise predictions and simulated returns)
 
 ## How Forecasting Works
-- We train models on historical **Close** prices with sliding windows.
-- We forecast daily business days forward to the requested dates:  
+- Train models on historical **Close** prices with sliding windows.
+-  Forecast daily business days forward to the requested dates:  
   - 1 June 2025, 1 September 2025, 1 December 2025, 1 June 2026
 - Investment simulation assumes an investment of **10,000 PKR on 1 June 2025** and computes projected value at each forecast date.
 
 ## Candlestick Charts
 - We use **mplfinance** (static) and **plotly** (interactive). If you prefer only matplotlib, you can disable plotly cells.
 
-## Reproducibility
-- Random seeds are fixed where applicable.
-- Results may vary based on library versions, GPU/CPU differences, and dataset updates.
-
-## Presentation & Recording
-- See **presentation/** for the slide deck 
-- A **5-minute speaker script** is included in the slides to guide your recording.
 
 ## License
 For academic use.
