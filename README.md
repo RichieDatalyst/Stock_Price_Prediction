@@ -42,8 +42,7 @@ This project builds a complete pipeline to:
 - Investment simulation assumes an investment of **10,000 PKR on 1 June 2025** and computes projected value at each forecast date.
 
 ## Candlestick Charts
-- We use **mplfinance** (static) and **plotly** (interactive). If you prefer only matplotlib, you can disable plotly cells.
-
+- Used **mplfinance** (static) and **plotly** (interactive).
 
 ## License
 For academic use.
